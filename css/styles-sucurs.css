@@ -1,0 +1,68 @@
+.sucurs
+{
+    grid-area: sucur;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--grisppal);
+    overflow: hidden;
+}
+
+.sucurs>h1
+{
+    align-self: flex-start;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0;
+    height: 20%;
+}
+
+.sucurs-maps
+{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.dir-sucurs
+{
+    height: 100%;
+    width: 200px;
+}
+
+.dir-sucurs>h2
+{
+
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 0px;
+    margin:0;
+}
+
+.dir-sucurs>span
+{
+    display: block;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.map
+{
+    width: 200px;
+    height: 200px;
+}
+
+.ifr-map
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}

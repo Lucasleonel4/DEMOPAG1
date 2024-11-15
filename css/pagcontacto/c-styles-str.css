@@ -1,0 +1,176 @@
+
+:root
+{
+    --azulppal: #070D2B; /* 232D4F */
+    --grisppal:  #272723;
+    --verdeppal: #2E7D33;
+    font-family: "Raleway", sans-serif;
+}
+
+.gridcontainerstrc
+{
+    display:grid;
+    grid-template-rows: 100px 88vh 350px;
+    grid-template-areas:"header header"
+                        "main main"
+                        "footer footer";
+    grid-gap: 10px; /* IGUAL RESULTADO CON gap: 10px; */
+    height: 100vh;
+}
+
+body{
+    background-color: var(--azulppal);
+    padding: 0;
+    margin: 0;
+}
+
+.header  /* Se puede borrar, ya que se dispuso en la hoja css específica para el header */
+{
+    background-color: var(--azulppal);
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; → No sirve para nada*/
+    font-family: "Montserrat", sans-serif;
+    /* border-radius: 10px; → Aplicar luego y dar el color azul marino especifico*/
+    /* o bien darle a la parte del logo y barra de busqueda el color azul y colo gris para el nav */
+}
+
+
+.footer
+{
+    grid-area: footer;
+    background-color: var(--azulppal);
+}
+
+
+.item{
+/*     background-color: var(--azulppal); */
+    /* padding: 10px; */
+    border-radius: 10px;
+    color: white;
+} 
+
+.main
+{
+grid-area: main;
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+grid-template-areas: "info formulario";
+background-color: var(--grisppal);
+}
+
+.div-formulario
+{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formul h2
+{
+    font-size: 16px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.CampoForm
+{
+    width: 95%;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.ComentForm
+{
+    width: 95%;
+    height: 80px;
+    margin-left: 10px;
+}
+
+#enviarbot
+{
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #2E7D33;
+    color: #2E7D33;  
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.camp
+{
+    border-radius: 3px;
+    border: gray 1px solid;
+}
+
+.infoppal
+{
+    grid-area: info;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                        "sucurs"
+                        "info";
+    background-color: gray;
+}
+
+.sucs
+{
+    grid-area: sucurs;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.texto2 h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+.texto2 p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.mapa2
+{
+    width: 200px;
+    height: 200px;
+}
+
+
+.info-formas
+{
+    grid-area: info;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    gap: 1em;
+}
+
+
+.info-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.text-info
+{
+    text-align: center;
+}

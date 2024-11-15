@@ -1,0 +1,6 @@
+str: estructuras de pagina en html
+
+mn: main
+ft: footer
+as: aside
+etc
