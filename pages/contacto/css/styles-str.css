@@ -1,0 +1,14 @@
+.div-str-gen
+{
+    display:grid;
+    grid-template-columns: 440px 1fr;
+    grid-template-rows: 100px 650px 100vh 350px 350px;
+    grid-template-areas:"header header"
+                        "left carrousel"
+                        "main main"
+                        "sucur sucur"
+                        "footer footer";
+    grid-gap: 10px; /* IGUAL RESULTADO CON gap: 10px; */
+    height: 100vh;
+
+}
